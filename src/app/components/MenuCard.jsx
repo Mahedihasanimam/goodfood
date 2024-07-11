@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const MenuCard = ({ item }) => {
@@ -11,9 +12,11 @@ const MenuCard = ({ item }) => {
                 </div>
                 <h2 className="text-2xl text-[#656565] font-bold mb-2">{item.name}</h2>
                 <p className="text-lg text-[#656565] font-bold mb-4">{item.price}</p>
+                <Link href={`/details/${item?.id}`}>
                 <button className="bg-[#5a9750] text-white w-full py-2 rounded mb-4 hover:bg-green-600">
                     Add to cart
                 </button>
+                </Link>
                 <div className="flex justify-between text-sm text-[#faa580]">
                     <span>Protein: {item.protein}</span> /
                     <span>Carbs: {item.carbs}</span> /
