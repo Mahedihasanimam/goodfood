@@ -36,58 +36,53 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-   <div className="container mx-auto my-20">
-    <h3 className="text-4xl text-center my-8 font-semibold">
-    Feedbacks
-        </h3>
-     <Swiper
-      spaceBetween={10}
-      centeredSlides={true}
-      loop={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper"
-      breakpoints={{
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-      }}
-    >
-      {testimonials.map((item, index) => (
-
-            <SwiperSlide key={index}>
-          <div className=" shadow-md rounded-lg p-6 mb-4 flex items-center bg-[#F7F7F7] py-12">
-            <Image 
-              height={64} 
-              width={64} 
-              className="w-16 h-16 rounded-full mr-4" 
-              src={item.image} 
-              alt={item.name} 
-            />
-            <div>
-              <h3 className="text-lg font-semibold">{item.name}</h3>
-              <p className="text-yellow-500">{item.role}</p>
-              <p className="text-gray-600 mt-2">{item.message}</p>
+    <div className="container mx-auto my-12 px-4">
+      <h3 className="text-4xl text-center my-8 font-semibold">Feedbacks</h3>
+      <Swiper
+        spaceBetween={10}
+        centeredSlides={true}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        }}
+      >
+        {testimonials.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="shadow-md rounded-lg p-6 mb-4 flex items-center bg-[#F7F7F7] py-12">
+              <Image
+                height={64}
+                width={64}
+                className="w-16 h-16 rounded-full mr-4"
+                src={item.image}
+                alt={item.name}
+              />
+              <div>
+                <h3 className="text-lg font-semibold">{item.name}</h3>
+                <p className="text-yellow-500">{item.role}</p>
+                <p className="text-gray-600 mt-2">{item.message}</p>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      
-      ))}
-    </Swiper>
-   </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
