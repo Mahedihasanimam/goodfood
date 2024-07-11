@@ -45,13 +45,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#FDFDFD] shadow-md p-2">
+    <div className="bg-[#FDFDFD] shadow-md ">
       <div className="bg-[#FDB64E] text-white h-14 flex items-center justify-center">
-        <marquee behavior="scroll" direction="left" scrollamount="5">
-          %% Free shipping on all orders %%
+        <marquee  behavior="scroll" direction="left" scrollamount="5">
+         <strong> %% Free shipping on all orders %%</strong>
         </marquee>
       </div>
-      <div className="container mx-auto flex flex-wrap justify-between items-center">
+      <div className="container mx-auto flex flex-wrap justify-between items-center p-2 ">
         <div className="flex-shrink-0">
           <Image src={"/asets/logo.png"} height={100} width={100} />
         </div>
