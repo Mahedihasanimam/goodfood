@@ -15,7 +15,7 @@ const HeroSlider = () => {
   return (
     <div>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         centeredSlides={true}
         loop={true}
         autoplay={{

@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+      "name": "Beef Pilaf",
+      "rating": 4.5,
+      "protein": "49g",
+      "carbs": "23g",
+      "fat": "23g",
+      "price": "$12.99",
+      "description": "Aromatic beef pilaf served with tender stewed beef, seasoned with a blend of spices.",
+      "imageUrl": "https://img.freepik.com/free-photo/side-view-pilaf-with-stewed-beef-meat-plate_141793-5057.jpg?t=st=1720707550~exp=1720711150~hmac=bce72b384ae819ade9f67333a792dd7a7c79bd2a5a6a3dd24bfdb410d20939a5&w=996",
+      "ingredients": [
+        "Beef",
+        "Rice",
+        "Onion",
+        "Garlic",
+        "Carrot",
+        "Spices"
+      ],
+      "instructions": [
+        "Sauté beef with onions and garlic until browned.",
+        "Add carrots and spices, then stir.",
+        "Add rice and water, then bring to a boil.",
+        "Reduce heat, cover, and simmer until rice is cooked."
+      ]
+    },
+    {
+        "id": 2,
+      "name": "Chicken Rice Bowl",
+      "rating": 4.2,
+      "protein": "40g",
+      "carbs": "20g",
+      "fat": "20g",
+      "price": "$10.99",
+      "description": "Bowl of rice topped with tender chicken, served with a mix of fresh vegetables.",
+      "imageUrl": "https://img.freepik.com/premium-photo/bowl-rice-with-chicken-rice_1028566-43186.jpg?w=740",
+      "ingredients": [
+        "Chicken breast",
+        "Rice",
+        "Mixed vegetables",
+        "Soy sauce",
+        "Ginger",
+        "Garlic"
+      ],
+      "instructions": [
+        "Cook rice according to package instructions.",
+        "Sauté chicken with ginger and garlic until cooked through.",
+        "Add mixed vegetables and soy sauce, then stir-fry.",
+        "Serve chicken and vegetables over rice."
+      ]
+    },
+    {
+        "id": 3,
+      "name": "Black Pepper Chicken",
+      "rating": 4.8,
+      "protein": "55g",
+      "carbs": "25g",
+      "fat": "18g",
+      "price": "$11.99",
+      "description": "Delicious black pepper chicken served with crisp colorful vegetables.",
+      "imageUrl": "https://img.freepik.com/premium-photo/gourmet-bowl-divided-into-three-sections-black-pepper-chicken-20-crisp-colorful-vegetab_555090-3245.jpg?w=740",
+      "ingredients": [
+        "Chicken",
+        "Black pepper",
+        "Bell peppers",
+        "Onion",
+        "Garlic",
+        "Soy sauce"
+      ],
+      "instructions": [
+        "Marinate chicken in soy sauce and black pepper.",
+        "Sauté chicken with onions and garlic until cooked.",
+        "Add bell peppers and stir-fry until tender.",
+        "Serve with rice or noodles."
+      ]
+    },
+    {
+        "id": 4,
+      "name": "Tandoori Chicken",
+      "rating": 4.6,
+      "protein": "50g",
+      "carbs": "30g",
+      "fat": "25g",
+      "price": "$13.99",
+      "description": "Tandoori chicken served with naan bread and a side of yogurt sauce.",
+      "imageUrl": "https://img.freepik.com/premium-photo/tandoori-chicken-served-with-naan-bread-yogurt-sau_1169880-39515.jpg?w=996",
+      "ingredients": [
+        "Chicken",
+        "Yogurt",
+        "Tandoori spices",
+        "Naan bread",
+        "Cucumber",
+        "Mint"
+      ],
+      "instructions": [
+        "Marinate chicken in yogurt and tandoori spices.",
+        "Grill or bake chicken until cooked through.",
+        "Serve with naan bread and yogurt sauce made with cucumber and mint."
+      ]
+    },
+    {
+        "id": 5,
+      "name": "Baked Chicken Drumsticks",
+      "rating": 4.7,
+      "protein": "48g",
+      "carbs": "22g",
+      "fat": "20g",
+      "price": "$12.99",
+      "description": "Baked chicken drumsticks with orange and smoked paprika, served with roasted vegetables.",
+      "imageUrl": "https://img.freepik.com/premium-photo/baked-chicken-drumstick-with-orange-smoked-paprika-provencal-herbs-olive-oil_948265-264863.jpg?w=740",
+      "ingredients": [
+        "Chicken drumsticks",
+        "Orange",
+        "Smoked paprika",
+        "Olive oil",
+        "Herbs",
+        "Mixed vegetables"
+      ],
+      "instructions": [
+        "Marinate chicken drumsticks in orange juice and smoked paprika.",
+        "Bake at 375°F (190°C) for 35-40 minutes.",
+        "Roast mixed vegetables in olive oil and herbs until tender.",
+        "Serve chicken with roasted vegetables."
+      ]
+    },
+    {
+        "id": 6,
+      "name": "Chicken Biryani",
+      "rating": 4.3,
+      "protein": "52g",
+      "carbs": "28g",
+      "fat": "24g",
+      "price": "$14.99",
+      "description": "Flavorful chicken biryani served with raita and a side of mixed pickles.",
+      "imageUrl": "https://img.freepik.com/premium-photo/top-view-bowl-delicious-yummy-special-chicken-biriyani-pot-its-appetizing_1025753-81998.jpg?w=740",
+      "ingredients": [
+        "Chicken",
+        "Basmati rice",
+        "Yogurt",
+        "Biryani spices",
+        "Onion",
+        "Tomato"
+      ],
+      "instructions": [
+        "Marinate chicken in yogurt and biryani spices.",
+        "Cook chicken with onions and tomatoes until tender.",
+        "Layer chicken with cooked basmati rice.",
+        "Steam until flavors are well combined.",
+        "Serve with raita and pickles."
+      ]
+    },
+    {
+        "id": 7,
+      "name": "Chicken Skewers",
+      "rating": 4.9,
+      "protein": "60g",
+      "carbs": "26g",
+      "fat": "19g",
+      "price": "$15.99",
+      "description": "Grilled chicken skewers with sweet peppers and dill, served with a side of rice.",
+      "imageUrl": "https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?t=st=1720707442~exp=1720711042~hmac=cc4057cadd0449d740b9ef8d0499dffd0446c8835adad91fbb8c50df86eddf05&w=996",
+      "ingredients": [
+        "Chicken",
+        "Sweet peppers",
+        "Dill",
+        "Olive oil",
+        "Garlic",
+        "Rice"
+      ],
+      "instructions": [
+        "Marinate chicken and sweet peppers in olive oil, garlic, and dill.",
+        "Thread onto skewers and grill until cooked.",
+        "Serve with a side of rice."
+      ]
+    }
+  ]
+  
