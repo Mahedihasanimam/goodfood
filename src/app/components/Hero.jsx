@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="lg:mt-0 max-w-2xl  mt-4">
             <HeroSlider/>
         </div>
-      <div className="absolute bottom-0 right-12 p-4 rounded-full bg-green-700 text-white">
+      <div className="fixed bottom-12 z-50 right-6 p-4 rounded-full bg-green-700 text-white">
       <MdShoppingCart size={25}/>
       </div>
       </div>

@@ -1,7 +1,9 @@
 "use client";
 
+import RelatedProduct from "@/app/components/RelatedPoduct";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { MdShoppingCart } from "react-icons/md";
 
 const MenuDetailsCard = ({ params }) => {
   const [menuItems, setMenuItems] = useState([]);
@@ -18,7 +20,9 @@ const MenuDetailsCard = ({ params }) => {
   const item = menuItems.find((i) => i.id === parseInt(params.id));
 
   return (
-    <div className="  overflow-hidden  flex justify-center items-center gap-12 m-4">
+    
+    <div>
+        <div className=" flex overflow-hidden  lg:flex-row md:flex-row flex-col justify-center items-center gap-12 m-4 mb-32">
       <div>
         <Image className=" rounded-[100px] w-full border p-2 bg-gray-200" height={500} width={500} src={item?.imageUrl} />
       </div>
@@ -68,6 +72,14 @@ const MenuDetailsCard = ({ params }) => {
           </div>
         </div>
       </div>
+      <div className=" bottom-12 right-4 p-4 rounded-full fixed z-50 bg-green-700 text-white">
+      <MdShoppingCart size={25}/>
+      </div>
+    </div>
+
+
+    <RelatedProduct/>
+    
     </div>
   );
 };
