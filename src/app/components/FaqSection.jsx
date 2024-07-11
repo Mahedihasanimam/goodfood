@@ -2,8 +2,8 @@ import React from "react";
 
 const FaqSection = () => {
   return (
-    <div className="container mx-auto space-y-12 my-12">
-      <div className="w-4/5 space-y-4 text-center mx-auto">
+    <div className="max-w-6xl mx-auto space-y-12 my-12 px-4">
+      <div className=" space-y-4 text-center mx-auto">
         <h3 className="text-4xl font-semibold">
           Popular Frequently Asked Questions
         </h3>
