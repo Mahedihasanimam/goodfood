@@ -31,7 +31,7 @@ const RelatedProduct = () => {
         id="why-simply-good-food"
         className="text-3xl text-start leading-9 font-extrabold text-gray-900 mb-6"
       >
-        RelatedProducts
+        Related Products
       </h2>
 
       <Swiper

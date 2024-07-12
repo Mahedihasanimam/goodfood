@@ -26,6 +26,11 @@ background-color: #ffff;
   z-index: -1; /* Ensure it is behind the content */
 }
 
+.bgimg{
+  background-image: url('/asets/loginimg.jpg');
+  
+  background-position: left;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

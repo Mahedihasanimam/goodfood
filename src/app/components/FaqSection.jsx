@@ -55,22 +55,26 @@ const FaqSection = () => {
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-xl font-medium">
-            What if I don t eat them all at once?
-
+              What if I don t eat them all at once?
             </div>
             <div className="collapse-content">
-              <p>What if I don t eat them all at long do my meals last How Do I Eat Fresh and Lean</p>
+              <p>
+                What if I don t eat them all at long do my meals last How Do I
+                Eat Fresh and Lean
+              </p>
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-xl font-medium">
-            What s in the food? Is it organic? Is it gluten free?
-
+              What s in the food? Is it organic? Is it gluten free?
             </div>
             <div className="collapse-content">
-              <p>What s in the food? Is it organic? Is it gluten free?
- if I don t eat them all at long do my meals last How Do I Eat Fresh and Lean</p>
+              <p>
+                What s in the food? Is it organic? Is it gluten free? if I don t
+                eat them all at long do my meals last How Do I Eat Fresh and
+                Lean
+              </p>
             </div>
           </div>
         </div>

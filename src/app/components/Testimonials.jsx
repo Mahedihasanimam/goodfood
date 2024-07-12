@@ -59,13 +59,13 @@ const Testimonials = () => {
           },
           1024: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 80,
           },
         }}
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="shadow-md rounded-lg p-6 mb-4 flex items-center bg-[#F7F7F7] py-12">
+            <div className="shadow-md rounded-lg p-6 mb-4 flex items-center min-h-60 bg-[#F7F7F7] py-12 border">
               <Image
                 height={64}
                 width={64}
@@ -83,6 +83,7 @@ const Testimonials = () => {
         ))}
       </Swiper>
     </div>
+    
   );
 };
 

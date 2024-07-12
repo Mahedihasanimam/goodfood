@@ -45,7 +45,7 @@ const MenuDetailsCard = ({ params }) => {
        
         <div className="join join-vertical w-full">
           <div className="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="my-accordion-4" defaultChecked />
+            <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-xl font-medium">
               <h3 className="text-lg font-bold mb-2">Ingredients</h3>
             </div>

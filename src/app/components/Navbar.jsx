@@ -81,12 +81,16 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className={`${isOpen ? "block" : "hidden"} md:flex flex-col lg:mx-0  mx-auto md:flex-row justify-between gap-2 md:gap-6 mt-2  md:mt-0`}>
+          <Link href={'/login'}>
           <button className="btn border-2 border-[#6AA75F] px-4 md:px-6 mr-6 py-2 rounded-lg text-[#6AA75F]">
             log in
           </button>
-          <button className="btn btn-primary bg-[#5a9750] px-4 md:px-6 py-2 rounded-lg text-white">
+          </Link>
+         
+         <Link href={'/signup'}> <button className="btn btn-primary bg-[#5a9750] hover:bg-[#5a9750] px-4 md:px-6 py-2 rounded-lg text-white">
             Sign up
           </button>
+          </Link>
         </div>
       </div>
     </div>
