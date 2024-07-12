@@ -1,5 +1,6 @@
 "use client";
-
+import { FaRegUser } from "react-icons/fa6";
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -9,36 +10,8 @@ const Navbar = () => {
   const pathName = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  const navitem = [
-    {
-      title: "Home",
-      path: "/",
-    },
-    {
-      title: "Our menus",
-      path: "/ourmenus",
-    },
-    {
-      title: "Meal Plans",
-      path: "/mealplans",
-    },
-    {
-      title: "Catering",
-      path: "/catering",
-    },
-    {
-      title: "How it work",
-      path: "/mealplans",
-    },
-    {
-      title: "Testimonials",
-      path: "/testimonials",
-    },
-    {
-      title: "FAQ",
-      path: "/faq",
-    },
-  ];
+  const seasion=  useSession()
+ console.log(seasion);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -80,7 +53,15 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <div className={`${isOpen ? "block" : "hidden"} md:flex flex-col lg:mx-0  mx-auto md:flex-row justify-between gap-2 md:gap-6 mt-2  md:mt-0`}>
+        { 
+          seasion.data ? <div className="dropdown dropdown-end">
+          <div tabIndex={0} role="button" className="btn m-1 py-1 rounded-full">
+            <FaRegUser size={30}/>
+          </div>
+          <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <button onClick={()=>signOut()}>logout</button>
+          </ul>
+        </div> : <div className={`${isOpen ? "block" : "hidden"} md:flex flex-col lg:mx-0  mx-auto md:flex-row justify-between gap-2 md:gap-6 mt-2  md:mt-0`}>
           <Link href={'/login'}>
           <button className="btn border-2 border-[#6AA75F] px-4 md:px-6 mr-6 py-2 rounded-lg text-[#6AA75F]">
             log in
@@ -92,9 +73,39 @@ const Navbar = () => {
           </button>
           </Link>
         </div>
+        }
       </div>
     </div>
   );
 };
-
+const navitem = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "Our menus",
+    path: "/ourmenus",
+  },
+  {
+    title: "Meal Plans",
+    path: "/mealplans",
+  },
+  {
+    title: "Catering",
+    path: "/catering",
+  },
+  {
+    title: "How it work",
+    path: "/mealplans",
+  },
+  {
+    title: "Testimonials",
+    path: "/testimonials",
+  },
+  {
+    title: "FAQ",
+    path: "/faq",
+  },
+];
 export default Navbar;
