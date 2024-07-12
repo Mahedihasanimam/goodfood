@@ -1,4 +1,4 @@
-import Image from "next/image";
+export const  daynamic= "force-daynamic"
 import Hero from "../components/Hero";
 import WhySimplyGoodFood from "./whygoodfood/page";
 import TrandingMen from "../components/TrandingMen";
@@ -14,7 +14,7 @@ export default function Home() {
       <TrandingMen/>
       <Dailymela/>
       <FaqSection/>
-      <Testimonials/>x
+      <Testimonials/>
     </main>
   );
 }

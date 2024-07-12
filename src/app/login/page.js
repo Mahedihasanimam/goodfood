@@ -1,20 +1,22 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import React from "react";
-import {signIn} from "next-auth/react"
-const SignInPage = () => {
-  const handleSubmit = async(e) => {
-    e.preventDefault();
-    // console.log(e.target.email.value);
-    const email=e.target.email.value
-    const password=e.target.password.value
+import { signIn } from "next-auth/react";
 
-    const res= await signIn('credentials',{
-email,password,redirect:false
-    })
-    
+const SignInPage = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    const res = await signIn('credentials', {
+      email,
+      password,
+      redirect: false
+    });
   };
+
   return (
     <div>
       <div className="bgimg bg-bottom min-h-[700px] h-screen p-4 bg-no-repeat bg-cover">
@@ -77,7 +79,7 @@ email,password,redirect:false
             </button>
           </form>
           <p className="text-lg text-center sm:px-6 text-gray-400">
-            Don't have an account?
+            Don&apos;t have an account?
             <Link href="/signup" className="font-bold">
               <span className="text-yellow-500"> Sign up</span>
             </Link>

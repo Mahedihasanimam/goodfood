@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 const MenuCard = ({ item }) => {
     return (
         <div className="border rounded-lg overflow-hidden w-full shadow-lg m-4">
-            <img src={item.imageUrl} alt={item.name} className="w-full h-48 object-cover" />
+            <Image height={500} width={500} src={item.imageUrl} alt={item.name}  className="w-full max-h-56  object-cover" />
             <div className="p-4">
                 <div className="flex items-center text-yellow-500 mb-2">
                     <span className="text-yellow-500">⭐</span>

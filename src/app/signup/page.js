@@ -15,7 +15,7 @@ const SignupPage = () => {
       confirmPassword: event.target.confirmPassword.value,
     };
     console.log(newUser);
-    const res = await fetch("http://localhost:3000/signup/api", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASEURL}/signup/api`, {
       method: "POST",
       body: JSON.stringify(newUser),
       headers:{
