@@ -4,8 +4,8 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <div className="bgimg bg-bottom h-screen p-4 bg-no-repeat bg-cover">
-        <div className="lg:w-1/2 w-full h-full my-2 float-end  p-8 space-y-8 rounded-xl bg-[#E7E7E7]  text-black">
+      <div className="bgimg bg-bottom min-h-[700px] h-screen p-4 bg-no-repeat bg-cover">
+        <div className="lg:w-1/2 w-full h-full my-2 float-end  p-8 space-y-8 rounded-xl bg-[#E7E7E7] bg-opacity-90  text-black">
           <h1 className="text-2xl font-bold text-center">
             Sign in to your account
           </h1>
@@ -34,7 +34,7 @@ const page = () => {
                 name="password"
                 id="password"
                 placeholder="Password"
-                className="w-full  lg:p-6  rounded-full  py-3 border-opacity-30 border-blue-600 focus:border-violet-400"
+                className="w-full  lg:p-6 p-4  rounded-full  py-3 border-opacity-30 border-blue-600 focus:border-violet-400"
               />
                 
               <div className="flex justify-between text-xs text-gray-400 my-6">

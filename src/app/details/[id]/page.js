@@ -1,10 +1,11 @@
 "use client";
 
-import RelatedProduct from "@/app/components/RelatedPoduct";
+import RelatedProduct from "@/components/RelatedPoduct";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdShoppingCart } from "react-icons/md";
-
+import { FaArrowLeftLong } from "react-icons/fa6";
 const MenuDetailsCard = ({ params }) => {
   const [menuItems, setMenuItems] = useState([]);
 
@@ -21,8 +22,14 @@ const MenuDetailsCard = ({ params }) => {
 
   return (
     
-    <div>
+    <div className="container mx-auto">
+      <Link className="" href={'/'}> 
+         <button className="flex items-center gap-2 ml-20 my-12 text-red-300 font-bold ">
+          <FaArrowLeftLong size={40}/> Back
+         </button>
+         </Link>
         <div className=" flex overflow-hidden  lg:flex-row md:flex-row flex-col justify-center items-center gap-12 m-4 mb-32">
+         
       <div>
         <Image className=" rounded-[100px] w-full border p-2 bg-gray-200" height={500} width={500} src={item?.imageUrl} />
       </div>
