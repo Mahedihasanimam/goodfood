@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AuthProvider from "@/provider/AuthProvider";
+import { FaViacoin } from "react-icons/fa6";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +17,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
      <body className={inter.className }>
+      <Link rel="icon" href={'/asets/slide2.png'}></Link>
+      <title>Simply Good Food</title>
      <AuthProvider>
         <Navbar/>
       {children}
